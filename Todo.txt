@@ -1,0 +1,48 @@
+To do
+
+1. User should be able to see all 3 tasks
+2. One feature
+	Make implementation random but thorough
+
+
+- Add new habit
+	Form
+		Habit name (text)
+		Type of habit
+		Stake (slider) - Javascript
+		Length (dropdown) - javascript: 
+		Notes (text)
+
+
+	When SUBMIT -> go to a different home page that shows the new habit added on
+
+- View progress
+	Static page that shows progress
+
+		Habit name
+		Days left
+		Graph of money earned?
+		Money earned?
+		HOME button
+
+- Add progress
+	From VIEW PROGRESS PAGE
+	Static page that shows a form
+	Nothing working - static values in form
+
+
+home screen with all the three options
+
+	2 home pages
+	1st - normal after sign-in
+	2nd - after click "save new habit" and will have that new habit there
+
+
+
+GOOGLE Font - Roboto
+
+CSS
+	Background color of everything
+
+	Color of individual buttons
+	Font
