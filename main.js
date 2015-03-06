@@ -32,7 +32,6 @@ function LoadAll(){
 		console.log(x);
 		Habitname = Habitname + ' ' + SplitHabit[x];
 	}
-
 	var Activity = getParameter('activity');
 
 	var Stake = getParameter('stake');

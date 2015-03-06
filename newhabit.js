@@ -30,6 +30,9 @@ function Activity(act){
 	console.log(act);
 }
 
+
 function LoadAll(){
 	ShowLength(70);
+	//Activity('fitness');
+
 }
