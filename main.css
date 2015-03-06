@@ -22,7 +22,52 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .habit {
   padding-top: 14px;
-  width: 320px;
+  width: 310px;
+  height: 73px;
+  padding-left: 5px;
+  padding-right: 5px;
+  }
+.habit-title {
+  height: 12px;
+  background-color: #ED5565;
+  font-size: 75%;
+  color: white;
+  padding: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.habit-body{
+  width: 300px;
+  height: 55px;
+  padding-left: 5px;
+  padding-right: 5px;
+  /*background-color:#F5F7FA;*/
+  background-color:#FFFFFF;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.habit-body-text {
+  width: 120px;
+  padding-top: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+.habit-body-text-top {
+  padding-bottom: 5px;
+  font-weight: 500;
+}
+
+.habit-body-text-bottom {
+  font-size: 50%;
+}
+
+.progress-bar{
+  width: 120px;
+  margin-left: 167px;
+  margin-top: -32px;
+
 }
 
 #add-habit {
