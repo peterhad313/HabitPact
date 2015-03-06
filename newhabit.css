@@ -1,0 +1,100 @@
+
+#stdScreen {
+  background-image: url(background.png);
+  display: block;
+  width: 320px;
+  height: 568px;
+  padding: 45px;
+  padding-top: 50px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#myForm input{
+  height: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Section {
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+#Buttons {
+	height: 120px;
+}
+#myForm p{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+}
+#myForm .typeButton{
+	height: 30px;
+	width: 30%;
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-top: 8px;
+	border-radius: 0px;
+	border: 0px;
+	float: left;
+	font-size: 10px;
+	color: #fff;
+
+}
+#myForm #eating{
+	background-color: rgb(244,176,39);
+}
+#myForm #fitness{
+	background-color: rgb(131,93,215);
+}
+#myForm #sleep{
+	background-color: rgb(209,43,63);
+}
+#myForm #hobby{
+	background-color: rgb(44,158,212);
+}
+#myForm #personal{
+	background-color: rgb(56,112,215);
+}
+#myForm #others{
+	background-color: rgb(206,84,158);
+}
+
+#myForm #Buttons input:active{
+	color: #000;
+	box-shadow: 0px 2px rgba(0,0,0,0.3), 0px -2px rgba(0,0,0,0.3), 2px 0px rgba(0,0,0,0.3), -2px 0px rgba(0,0,0,0.3);
+}
+
+
+#myForm #days {
+	font-size: 15px;
+	color: #ccc;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 350;
+}
+#myForm #moneysign{
+	float:left;
+	font-size: 20px;
+	margin-left: 2px;
+}
+#myform #money{
+	width: 50%;
+	margin-left: 10px;
+	margin-top: 8px;
+	text-align: right;
+}
+#myform #begin{
+	margin-top: 50px;
+	font-size:16px;
+	color: #fff;
+
+}

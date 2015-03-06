@@ -1,0 +1,59 @@
+
+<html>
+
+<head>
+  <title>HabitPact</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300,100' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="newhabit.css">
+</head>
+<script src='newhabit.js'> </script>
+<body onload='LoadAll();'>
+
+  <div id="stdScreen">
+
+
+	<div id='myForm'>
+		<form action='home_1.html' method='POST'> 
+			<div id='HabitName' class='Section'> 
+				<p> HABIT NAME </p>
+				<input type='text' id='NameInput' name='HabitName'>
+			</div>
+
+			<div id='Buttons' class='Section'>
+				<p> TYPE </p>
+				<input type='button' class='typeButton' value='EATING' id='eating' type='button' onclick="Activity('eating');">
+				<input type='button' class='typeButton' value='FITNESS' id='fitness' type='button' onclick="Activity('fitness');">
+				<input type='button' class='typeButton' value='SLEEP' id='sleep' type='button' onclick="Activity('sleep');">
+				<input type='button' class='typeButton' value='HOBBY' id='hobby' type='button' onclick="Activity('hobby');">
+				<input type='button' class='typeButton' value='PERSONAL' id='personal' type='button' onclick="Activity('personal');">
+				<input type='button' class='typeButton' value='OTHERS' id='other' type='button' onclick="Activity('other');">
+				<input type='hidden' name='activity' id='ActivityType'>
+			</div>
+
+			<div id='Length' class='Section'> 
+				<p> LENGTH </p>
+				<input type='range' min='66' max='200' value='70' id='lengthbar' oninput='ShowLength(value);'>
+				<div id='days'>70 days</div>
+			</div>
+
+			<div id='Stake' class='Section'>
+				<p> STAKE </p>
+				<div id='moneyInfo'>
+					<p id='moneysign'> $  </p>
+					<input type='text' id='money' name='stake'>
+				</div>
+			</div>
+
+			<div id='Submit' class='Section'>
+				<input type='submit' value='BEGIN' id='begin'>
+			</div>
+		</form>
+	</div>
+
+
+  </div>
+
+</body>
+
+</html>
