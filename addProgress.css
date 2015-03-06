@@ -1,0 +1,26 @@
+#header{
+	width: 320px;
+	height: 52.4px;
+	background-image: url(header.png);
+	background-size: 100%;
+}
+
+#screen {
+  background-image: url(background.png);
+  display: block;
+  width: 320px;
+  height: 568px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#header #backButton{
+	width: 10%;
+	position: relative;
+	bottom: -10px;
+	height: 70%;
+	margin-left: 10px;
+	background-size: 100%;
+	background-image: url(back.png);
+}

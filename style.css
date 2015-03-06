@@ -77,3 +77,8 @@ input:focus {
   color: #C9C5C8;
   font-weight: 400;
 }
+
+#header {
+  width: 320px;
+}
+
