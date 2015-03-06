@@ -1,0 +1,27 @@
+EECS 330 - P6: COMPUTER PROTOTYPE
+TEAM: HabitPact
+
+Peter Haddad
+Pete Huang
+Bruno Peynetti
+Arisa Toyosaki
+
+link to prototype: http://peterhad313.github.io/HabitPact
+
+* Sign-up/Log-in page is static, simply click on Sign In to proceed
+
+Representative Tasks:
+
+1) Create a new habit - Implemented fully on html,css,javascript
+	In this task, the user gets to choose a new habit, set its type, length, and stake ($ to 'invest' initially and get back at end of the pact)
+	The task is a simple form. The user has to figure out what to click on and how to determine values for the task. Ideally, this would be done on a touchscreen smartphone, but it can easily be done with a cursor. 
+	Once the form is filled out, BEGIN will send the data to the home screen, where the user can see the task he/she just created, along with an empty progress bar showing the days left to complete the task. 
+	Since there is no back-end storage of user interaction, any clicks or visits to other pages will result in the new task to be deleted. 
+
+2) View Habit - static implementation
+	In this task, the user wants to check on his/her habit to see the progress. 
+	This is done by clicking on any of the presently working habits (for our case, just one). The link will show a page with information about the given habit and the progress toward completing it. 
+
+3) Add Progress - static implementation
+	In this task, the user wants to log some new progress to a given habit. For example, log a workout for a Fitness-type habit. This is a button within the View Progress page, so the user is aware of the habit he is adding progress to. 
+	Depending on the type of habit where progress is being logged, the app would then ask for information (location, pictures, friends' reviews, fitness tracking band synchronization, etc...)
