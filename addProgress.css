@@ -16,6 +16,7 @@
 }
 
 #header #backButton{
+  z-index: 100;
 	width: 10%;
 	position: relative;
 	bottom: -10px;
@@ -23,4 +24,38 @@
 	margin-left: 10px;
 	background-size: 100%;
 	background-image: url(back.png);
+}
+
+#add-progress-content {
+  background-image: url(add-progress-everything.png);
+  background-size: 320px 568px;
+  position: relative;
+  top: -50px;
+  width: 320px;
+  height: 568px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#add-progress {
+  width: 230px;
+  outline: 0;
+  border: 1px solid #3E4E4B;
+  background-color: #566C56;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  height: 50px;
+  color: #fff;
+  text-transform: uppercase;
+
+}
+
+#add-progress-wrapper {
+  width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 89%;
 }

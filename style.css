@@ -4,7 +4,6 @@
   width: 320px;
   height: 568px;
   padding: 45px;
-  padding-top: 200px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -71,6 +70,15 @@ input:focus {
   text-align: center;
   margin-top: 30px;
   font-weight: 100;
+}
+
+#logo {
+  background-image: url(logo.png);
+  background-size: 306px 230px;
+  width: 320px;
+  height: 200px;
+  margin-left: -40px;
+  margin-top: -40px;
 }
 
 .title {
