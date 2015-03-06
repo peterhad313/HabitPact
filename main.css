@@ -71,7 +71,7 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 #add-habit {
-  width: 308px;
+  width: 311px;
   height: 55px;
   border: 1px solid #3E4E4B;
   text-transform: uppercase;
@@ -81,6 +81,8 @@ body, h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   margin-top: 20px;
   font-weight: 300;
+  margin-left: 5px;
+  /*margin-right: 5px;*/
 }
 
 #add-habit-wrapper {
