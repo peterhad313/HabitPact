@@ -37,6 +37,10 @@ body, h1, h2, h3, h4, h5, h6 {
   border-top-right-radius: 5px;
 }
 
+#habit2 {
+  background-color: rgb(243,174,52);
+}
+
 .habit-body{
   width: 300px;
   height: 55px;
@@ -67,7 +71,26 @@ body, h1, h2, h3, h4, h5, h6 {
   width: 120px;
   margin-left: 167px;
   margin-top: -32px;
+}
 
+.progress-bar .progress-tag{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+}
+
+.progress-bar .left-number{
+  font-size: 8px;
+  float: left;
+  width: 10%;
+}
+.progress-bar .right-number{
+  font-size: 8px;
+  width: 10%;
+  text-align: right;
+  float: left;
+  color: #000;
 }
 
 #add-habit {

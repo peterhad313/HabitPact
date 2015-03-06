@@ -6,23 +6,26 @@
   <link rel="stylesheet" type="text/css" href="main.css">
   
 </head>
+<script src='main.js'> </script>
 
-<body>
+<body onload='LoadAll();'>
 
 
 <div id="screen">
   <img id ="header" src="header.png">
-  <div class="habit" onclick="location.href='viewProgress.html';">
-    <div class="habit-title">HABIT #1</div>
-    <div class="habit-body">
-      <div class="habit-body-text">
-        <div class="habit-body-text-top">Eating Healthy</div>
-        <div class="habit-body-text-bottom"> EARNED: $25 | STREAK: 10 DAYS </div>
+  <div id='habits'>
+    <div class="habit" onclick="location.href='viewProgress.html';">
+      <div class="habit-title">HABIT #1</div>
+      <div class="habit-body">
+        <div class="habit-body-text">
+          <div class="habit-body-text-top">Eating Healthy</div>
+          <div class="habit-body-text-bottom"> EARNED: $25 | STREAK: 10 DAYS </div>
+        </div>
+        <img class="progress-bar"src="progress_red.png">
       </div>
-      <img class="progress-bar"src="progress_red.png">
-    </div>
   </div>
-  <form action='newhabit.html' method='POST'>
+  </div>
+  <form action='newhabit.html' method='GET'>
         <input type="submit" id="add-habit" value="+ add a new habit +">
       </form>
 </div>

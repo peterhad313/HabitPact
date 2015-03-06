@@ -18,7 +18,7 @@
     <div id="stdScreen">
 
 	<div id='myForm'>
-		<form action='main.html' method='POST'> 
+		<form action='main.html' method='GET'> 
 			<div id='HabitName' class='Section'> 
 				<p> HABIT NAME </p>
 				<input type='text' id='NameInput' name='HabitName'>
@@ -37,7 +37,7 @@
 
 			<div id='Length' class='Section'> 
 				<p> LENGTH </p>
-				<input type='range' min='66' max='200' value='70' id='lengthbar' oninput='ShowLength(value);'>
+				<input type='range' min='66' max='200' value='70' name='lengthbar' id='lengthbar' oninput='ShowLength(value);'>
 				<div id='days'>70 days</div>
 			</div>
 
