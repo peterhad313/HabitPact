@@ -19,6 +19,29 @@ function getParameter(paramName) {
 }
 
 	//++++++++++ end of mentioned portion of code 
+var goleft=1;
+
+$(document).ready(function(){
+    $('.icon-menu').click(function() {
+        console.log('something happened');
+        if (goleft==1){
+        	pos = '0px';
+        }
+        else {
+        	pos = '-280px';
+        }
+        $('.menu').animate({
+        	left: pos
+        },200);
+        
+        //$('body').animate({
+        //    left:'285px'
+        //},200);
+    	goleft=goleft*-1;
+    });
+});
+
+
 
 function LoadAll(){
 
@@ -39,7 +62,7 @@ function LoadAll(){
 	var Length = getParameter('lengthbar');
 
 	if (HabitName==null){
-		console.log('Dead!!!!');
+		console.log('no new habit');
 		return;
 	}
 
@@ -51,11 +74,17 @@ function LoadAll(){
 	document.getElementById('habits').appendChild(div);
 
 	myString = " \n <div class='habit-title' id='habit2'> HABIT #2 </div> \n <div class='habit-body'> \n <div class='habit-body-text'> \n <div class='habit-body-text-top'>" + Habitname + "</div> \n <div class='habit-body-text-bottom'> EARNED: $0 | STREAK: 1 DAY </div> \n </div> \n ";
-	myString=myString + "<div class='progress-bar'> <div class='left-number'>0</div> <progress class='progress-tag' value=0 max="+Length+"> </progress> <div class='right-number'>"+Length+"</div>\n ";
+	myString=myString + "<div class='progress-bar' id='second-progress'>  <progress class='progress-tag' value=0 max="+Length+"> </progress> </div><div class='numbers-bar'> <div class='left-number'>0</div><div class='right-number'>"+Length+"</div> </div>\n  ";
 
 	myString=myString+"</div> \n"; 
+	div.innerHTML = myString;
 
-	div.innerHTML=myString;
+	var new_button = document.createElement('div');
+	new_button.id='newButton';
+	new_button.className='add-progress';
+	String2 = "<form action='addProgress.html' method='GET'> \t <input type='submit' id='add-progress' value='add progress for habit #2'> \n </form> ";
+	document.getElementById('habits').appendChild(new_button);
+	new_button.innerHTML=String2;
 
 	return;
 }

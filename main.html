@@ -4,15 +4,18 @@
   <title>HabitPact</title>
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300,100' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="main.css">
-  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
 </head>
 <script src='main.js'> </script>
-
 <body onload='LoadAll();'>
 
-
+<div class='menu'>
+</div>
 <div id="screen">
-  <img id ="header" src="header.png">
+  <div id ="header">
+    <div class='icon-menu'> </div>
+  </div>
   <div id='habits'>
     <div class="habit" onclick="location.href='viewProgress.html';">
       <div class="habit-title">HABIT #1</div>
@@ -23,7 +26,12 @@
         </div>
         <img class="progress-bar"src="progress_red.png">
       </div>
-  </div>
+    </div>
+      <div class='add-progress' >
+        <form action='addProgress.html' method='GET'>
+          <input type='submit' id='add-progress' value='add progress for habit #1'>
+        </form>
+      </div>
   </div>
   <form action='newhabit.html' method='GET'>
         <input type="submit" id="add-habit" value="+ add a new habit +">

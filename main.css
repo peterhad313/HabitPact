@@ -9,7 +9,23 @@
   box-sizing: border-box;
 }
 
+body {
+  left: 0px;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  width: 320px;
+}
 
+.menu {
+  background-image: url(menu_image.png);
+  background-size: 100%;
+  position:fixed;
+  position: 0px;
+  left: -280px;
+  width: 280px;
+  height: 568px;
+}
 
 body, h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
@@ -18,7 +34,24 @@ body, h1, h2, h3, h4, h5, h6 {
 
 #header {
   width: 320px;
+  height: 55px;
+  background-image: url(header.png);
+  background-size: 100%;
 }
+
+#header .icon-menu{
+  width: 15%;
+  position: relative;
+  z-index: 100;
+  bottom: -13px;
+  height: 50%;
+  margin-left: 10px;
+  background-size: 100%;
+  background-image: url(Menu.png);
+  cursor: pointer;
+}
+
+
 
 .habit {
   padding-top: 14px;
@@ -70,27 +103,47 @@ body, h1, h2, h3, h4, h5, h6 {
 .progress-bar{
   width: 120px;
   margin-left: 167px;
-  margin-top: -32px;
+  margin-top: -35px;
 }
 
 .progress-bar .progress-tag{
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+.numbers-bar {
+  width: 34%;
+  margin-right: 33px;
+  height: 10px;
+  float: right;
+  color: #aaa;
+}
+.left-number{
+  font-size: 8px;
+  float: left;
+  width: 50%;
+}
+.right-number{
+  font-size: 8px;
+  width: 50%;
+  text-align: right;
   float: left;
 }
 
-.progress-bar .left-number{
-  font-size: 8px;
-  float: left;
-  width: 10%;
+#second-progress {
+  margin-top: -10px;
 }
-.progress-bar .right-number{
-  font-size: 8px;
-  width: 10%;
-  text-align: right;
-  float: left;
-  color: #000;
+
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 9px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 0px;
+
 }
 
 #add-habit {
@@ -102,6 +155,21 @@ body, h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
   background-color: #566C56;
   font-size: 18px;
+  margin-top: 20px;
+  font-weight: 300;
+  margin-left: 5px;
+  /*margin-right: 5px;*/
+}
+
+#add-progress {
+  width: 311px;
+  height: 55px;
+  border: 1px solid #3E4E4B;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #566C56;
+  font-size: 16px;
   margin-top: 20px;
   font-weight: 300;
   margin-left: 5px;
